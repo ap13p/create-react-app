@@ -41,7 +41,8 @@ module.exports = {
       // a dependency in generated projects.
       // See https://github.com/facebookincubator/create-react-app/issues/255
       'babel-runtime/regenerator': require.resolve('babel-runtime/regenerator')
-    }
+    },
+    modulesDirectories: ['app', paths.appSrc]
   },
   resolveLoader: {
     root: paths.ownNodeModules,
